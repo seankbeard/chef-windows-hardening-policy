@@ -13,4 +13,4 @@ default_source :supermarket
 cookbook 'windows-hardening', git: 'https://github.com/dev-sec/chef-windows-hardening'
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list 'windows-hardening'
+run_list 'windows-hardening::default'
