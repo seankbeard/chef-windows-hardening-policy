@@ -1,0 +1,63 @@
+{
+  "revision_id": "bdc21b4a390b5d9c1910b5b7d5b60608fa6316c50991c8ff50bd7500495e025c",
+  "name": "harden",
+  "run_list": [
+    "recipe[windows-hardening::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "windows-hardening": {
+      "version": "0.9.1",
+      "identifier": "03a3b385d6c1baeb2116470f6c84fc2799535c51",
+      "dotted_decimal_identifier": "1024416370049466.66182999092194436.277247006301265",
+      "cache_key": "windows-hardening-a184bdff2d2066ad5761d8b7258a55dd1efca37d",
+      "origin": "https://github.com/dev-sec/chef-windows-hardening",
+      "source_options": {
+        "git": "https://github.com/dev-sec/chef-windows-hardening",
+        "revision": "a184bdff2d2066ad5761d8b7258a55dd1efca37d"
+      }
+    },
+    "windows-security-policy": {
+      "version": "0.3.9",
+      "identifier": "b2e3ba1e3ced20a311a7903a59c8198183a82ec7",
+      "dotted_decimal_identifier": "50352934365228320.45899832580790728.28044050312903",
+      "cache_key": "windows-security-policy-0.3.9-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/windows-security-policy/versions/0.3.9/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/windows-security-policy/versions/0.3.9/download",
+        "version": "0.3.9"
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "windows-hardening",
+        ">= 0.0.0"
+      ],
+      [
+        "windows-security-policy",
+        "= 0.3.9"
+      ]
+    ],
+    "dependencies": {
+      "windows-hardening (0.9.1)": [
+        [
+          "windows-security-policy",
+          ">= 0.0.0"
+        ]
+      ],
+      "windows-security-policy (0.3.9)": [
+
+      ]
+    }
+  }
+}
